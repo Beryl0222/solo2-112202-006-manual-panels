@@ -1,0 +1,54 @@
+{
+  "columns": {
+    "strings.tsv": [
+      "id",
+      "bundle",
+      "screen",
+      "lang",
+      "source",
+      "variants"
+    ],
+    "hardware.tsv": [
+      "id",
+      "lines",
+      "columns",
+      "glyphs",
+      "visible",
+      "install"
+    ],
+    "rollouts.tsv": [
+      "id",
+      "line",
+      "hardware",
+      "lang",
+      "phase",
+      "bundle_rev",
+      "gloss"
+    ],
+    "installed_strings.tsv": [
+      "id",
+      "rev",
+      "group",
+      "lang",
+      "screen",
+      "text"
+    ]
+  },
+  "references": [
+    [
+      "rollouts.tsv",
+      "hardware",
+      "hardware.tsv"
+    ]
+  ],
+  "compound_keys": [
+    [
+      "strings.tsv",
+      [
+        "bundle",
+        "screen",
+        "lang"
+      ]
+    ]
+  ]
+}

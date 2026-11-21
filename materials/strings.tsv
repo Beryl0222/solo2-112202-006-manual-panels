@@ -1,0 +1,9 @@
+id	bundle	screen	lang	source	variants
+T1	feed	hold	es	等料，随后继续送料	Espere material|Espere. Siga
+T2	feed	run	es	立即继续送料	Siga suministro|Siga
+T3	feed	full	es	仓满时别继续送料	No siga|Revise llenado
+T4	feed	hold	pt	等料，随后继续送料	Aguarde material|Aguarde. Siga
+T5	feed	run	pt	立即继续送料	Retome a carga|Siga
+T6	shared	ok	es	按绿色确认键	Tecla verde|Aceptar
+T7	shared	ok	pt	按绿色确认键	Tecla verde|Aceitar
+T8	feed	next	es	确认清仓以后可继续	Tras vaciar, siga|Confirmar vaciado

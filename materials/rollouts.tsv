@@ -1,0 +1,5 @@
+id	line	hardware	lang	phase	bundle_rev	gloss
+D1	西装	H1	es	已领未装	K1	Aceptar 是绿色确认
+D2	西装	H2	es	装好	K1	旧共享菜单里 Siga 是绿色确认
+D3	东装	H2	pt	未领	K0	Aceitar 是绿色确认
+D4	东装	H2	pt	读屏记录	K0	已人工确认 feed K0 与 shared K0

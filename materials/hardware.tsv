@@ -1,0 +1,3 @@
+id	lines	columns	glyphs	visible	install
+H1	1	14	ASCII 拉丁字母、数字、空格和点	一次只见本屏	整包
+H2	2	16	H1 加斜线和重音字母	hold 到 next 可同时见两条	页面组

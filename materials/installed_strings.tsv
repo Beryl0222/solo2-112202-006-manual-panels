@@ -1,0 +1,7 @@
+id	rev	group	lang	screen	text
+V1	K1	shared	es	ok	Pulse Siga para confirmar, tecla verde
+V2	K0	shared	es	ok	Pulse Aceptar, tecla verde
+V3	K0	shared	pt	ok	Aceitar é a tecla verde
+V4	K1	feed	es	run	Siga
+V5	K0	feed	pt	hold	Aguarde material
+V6	K1	feed	es	full	No siga
