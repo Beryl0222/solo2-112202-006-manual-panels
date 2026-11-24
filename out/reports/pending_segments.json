@@ -1,0 +1,99 @@
+[
+  {
+    "segment": "feed/full",
+    "lang": "pt",
+    "source": "",
+    "kind": "missing-submission",
+    "affected_hardware": [
+      "H1",
+      "H2"
+    ],
+    "detail": "译员尚未提交本屏备选"
+  },
+  {
+    "segment": "feed/hold",
+    "lang": "es",
+    "source": "等料，随后继续送料",
+    "kind": "no-usable-variant",
+    "affected_hardware": [
+      "H1"
+    ],
+    "detail": "所有备选在这些机型上均保不住义或放不下",
+    "rejected": [
+      {
+        "text": "Espere material",
+        "hardware": "H1",
+        "reasons": [
+          "行宽放不下：15 列超过 H1 的 14 列"
+        ]
+      },
+      {
+        "text": "Espere. Siga",
+        "hardware": "H1",
+        "reasons": [
+          "与工位确认键名 Siga 冲突：本屏方向是 wait，值班员会照键名按错"
+        ]
+      }
+    ]
+  },
+  {
+    "segment": "feed/next",
+    "lang": "es",
+    "source": "确认清仓以后可继续",
+    "kind": "no-usable-variant",
+    "affected_hardware": [
+      "H1",
+      "H2"
+    ],
+    "detail": "所有备选在这些机型上均保不住义或放不下",
+    "rejected": [
+      {
+        "text": "Tras vaciar, siga",
+        "hardware": "H1",
+        "reasons": [
+          "字形放不下：第 11 位 ',' 超出 H1 字形",
+          "行宽放不下：17 列超过 H1 的 14 列",
+          "与工位确认键名 Siga 冲突：本屏方向是 conditional-proceed，值班员会照键名按错"
+        ]
+      },
+      {
+        "text": "Tras vaciar, siga",
+        "hardware": "H2",
+        "reasons": [
+          "字形放不下：第 11 位 ',' 超出 H2 字形",
+          "行宽放不下：17 列超过 H2 的 16 列",
+          "与工位确认键名 Siga 冲突：本屏方向是 conditional-proceed，值班员会照键名按错"
+        ]
+      },
+      {
+        "text": "Confirmar vaciado",
+        "hardware": "H1",
+        "reasons": [
+          "行宽放不下：17 列超过 H1 的 14 列",
+          "丢失方向：需要 conditional-proceed",
+          "丢失步骤：proceed"
+        ]
+      },
+      {
+        "text": "Confirmar vaciado",
+        "hardware": "H2",
+        "reasons": [
+          "行宽放不下：17 列超过 H2 的 16 列",
+          "丢失方向：需要 conditional-proceed",
+          "丢失步骤：proceed"
+        ]
+      }
+    ]
+  },
+  {
+    "segment": "feed/next",
+    "lang": "pt",
+    "source": "",
+    "kind": "missing-submission",
+    "affected_hardware": [
+      "H1",
+      "H2"
+    ],
+    "detail": "译员尚未提交本屏备选"
+  }
+]

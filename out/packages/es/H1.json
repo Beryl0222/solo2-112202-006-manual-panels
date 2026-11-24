@@ -1,0 +1,27 @@
+{
+  "groups": {
+    "feed": {
+      "blocked": [
+        "hold",
+        "next"
+      ],
+      "ready": false,
+      "rev": "K2",
+      "screens": {
+        "full": "No siga",
+        "run": "Siga"
+      }
+    },
+    "shared": {
+      "blocked": [],
+      "ready": true,
+      "rev": "K2",
+      "screens": {
+        "ok": "Tecla verde"
+      }
+    }
+  },
+  "hardware": "H1",
+  "lang": "es",
+  "rev": "K2"
+}

@@ -1,0 +1,130 @@
+{
+  "screens": {
+    "feed/hold": {
+      "require_direction": "wait",
+      "steps": ["wait", "proceed"],
+      "allow_next_screen_completion": true,
+      "note": "等料，随后继续送料：当前屏控制等待，必须独立保留等待方向；随后的继续步骤允许由下一屏补全。"
+    },
+    "feed/run": {
+      "require_direction": "proceed",
+      "steps": ["proceed"],
+      "allow_next_screen_completion": false,
+      "note": "立即继续送料：当前屏控制继续。"
+    },
+    "feed/full": {
+      "require_direction": "stop",
+      "require_negation": true,
+      "steps": ["stop"],
+      "allow_next_screen_completion": false,
+      "note": "仓满时别继续送料：否定是安全方向，必须保留。"
+    },
+    "feed/next": {
+      "require_direction": "conditional-proceed",
+      "steps": ["confirm", "proceed"],
+      "allow_next_screen_completion": false,
+      "note": "确认清仓以后可继续：条件与继续许可都要在，本屏之后没有下一屏可补全。"
+    },
+    "shared/ok": {
+      "require_direction": "confirm",
+      "require_key_ref": true,
+      "steps": ["confirm"],
+      "allow_next_screen_completion": false,
+      "note": "按绿色确认键：必须指向绿色确认键本身（颜色或键名）。"
+    }
+  },
+  "variants": {
+    "Espere material": {
+      "directions": ["wait"],
+      "steps": ["wait"],
+      "negation": false,
+      "tokens": ["Espere", "material"]
+    },
+    "Espere. Siga": {
+      "directions": ["wait", "proceed"],
+      "steps": ["wait", "proceed"],
+      "negation": false,
+      "tokens": ["Espere", "Siga"]
+    },
+    "Siga suministro": {
+      "directions": ["proceed"],
+      "steps": ["proceed"],
+      "negation": false,
+      "keeps_object": true,
+      "tokens": ["Siga", "suministro"]
+    },
+    "Siga": {
+      "directions": ["proceed"],
+      "steps": ["proceed"],
+      "negation": false,
+      "keeps_object": false,
+      "tokens": ["Siga"]
+    },
+    "No siga": {
+      "directions": ["stop"],
+      "steps": ["stop"],
+      "negation": true,
+      "tokens": ["No", "siga"]
+    },
+    "Revise llenado": {
+      "directions": [],
+      "steps": [],
+      "negation": false,
+      "tokens": ["Revise", "llenado"],
+      "flaw": "丢失否定：只让检查料位，未表达别继续送料"
+    },
+    "Aguarde material": {
+      "directions": ["wait"],
+      "steps": ["wait"],
+      "negation": false,
+      "tokens": ["Aguarde", "material"]
+    },
+    "Aguarde. Siga": {
+      "directions": ["wait", "proceed"],
+      "steps": ["wait", "proceed"],
+      "negation": false,
+      "tokens": ["Aguarde", "Siga"]
+    },
+    "Retome a carga": {
+      "directions": ["proceed"],
+      "steps": ["proceed"],
+      "negation": false,
+      "keeps_object": true,
+      "tokens": ["Retome", "a", "carga"]
+    },
+    "Tecla verde": {
+      "directions": ["confirm"],
+      "steps": ["confirm"],
+      "negation": false,
+      "key_ref": "color",
+      "tokens": ["Tecla", "verde"]
+    },
+    "Aceptar": {
+      "directions": ["confirm"],
+      "steps": ["confirm"],
+      "negation": false,
+      "key_ref": "label",
+      "tokens": ["Aceptar"]
+    },
+    "Aceitar": {
+      "directions": ["confirm"],
+      "steps": ["confirm"],
+      "negation": false,
+      "key_ref": "label",
+      "tokens": ["Aceitar"]
+    },
+    "Tras vaciar, siga": {
+      "directions": ["conditional-proceed"],
+      "steps": ["confirm", "proceed"],
+      "negation": false,
+      "tokens": ["Tras", "vaciar", "siga"]
+    },
+    "Confirmar vaciado": {
+      "directions": ["confirm"],
+      "steps": ["confirm"],
+      "negation": false,
+      "tokens": ["Confirmar", "vaciado"],
+      "flaw": "丢失继续许可：只让确认清仓，未表达之后可继续"
+    }
+  }
+}

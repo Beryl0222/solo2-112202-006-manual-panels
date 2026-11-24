@@ -1,0 +1,27 @@
+{
+  "groups": {
+    "feed": {
+      "blocked": [
+        "next"
+      ],
+      "ready": false,
+      "rev": "K2",
+      "screens": {
+        "full": "No siga",
+        "hold": "Espere material",
+        "run": "Siga suministro"
+      }
+    },
+    "shared": {
+      "blocked": [],
+      "ready": true,
+      "rev": "K2",
+      "screens": {
+        "ok": "Tecla verde"
+      }
+    }
+  },
+  "hardware": "H2",
+  "lang": "es",
+  "rev": "K2"
+}

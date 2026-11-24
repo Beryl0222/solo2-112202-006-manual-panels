@@ -1,0 +1,259 @@
+{
+  "new_rev": "K2",
+  "pending_segments": [
+    {
+      "segment": "feed/full",
+      "lang": "pt",
+      "source": "",
+      "kind": "missing-submission",
+      "affected_hardware": [
+        "H1",
+        "H2"
+      ],
+      "detail": "译员尚未提交本屏备选"
+    },
+    {
+      "segment": "feed/hold",
+      "lang": "es",
+      "source": "等料，随后继续送料",
+      "kind": "no-usable-variant",
+      "affected_hardware": [
+        "H1"
+      ],
+      "detail": "所有备选在这些机型上均保不住义或放不下",
+      "rejected": [
+        {
+          "text": "Espere material",
+          "hardware": "H1",
+          "reasons": [
+            "行宽放不下：15 列超过 H1 的 14 列"
+          ]
+        },
+        {
+          "text": "Espere. Siga",
+          "hardware": "H1",
+          "reasons": [
+            "与工位确认键名 Siga 冲突：本屏方向是 wait，值班员会照键名按错"
+          ]
+        }
+      ]
+    },
+    {
+      "segment": "feed/next",
+      "lang": "es",
+      "source": "确认清仓以后可继续",
+      "kind": "no-usable-variant",
+      "affected_hardware": [
+        "H1",
+        "H2"
+      ],
+      "detail": "所有备选在这些机型上均保不住义或放不下",
+      "rejected": [
+        {
+          "text": "Tras vaciar, siga",
+          "hardware": "H1",
+          "reasons": [
+            "字形放不下：第 11 位 ',' 超出 H1 字形",
+            "行宽放不下：17 列超过 H1 的 14 列",
+            "与工位确认键名 Siga 冲突：本屏方向是 conditional-proceed，值班员会照键名按错"
+          ]
+        },
+        {
+          "text": "Tras vaciar, siga",
+          "hardware": "H2",
+          "reasons": [
+            "字形放不下：第 11 位 ',' 超出 H2 字形",
+            "行宽放不下：17 列超过 H2 的 16 列",
+            "与工位确认键名 Siga 冲突：本屏方向是 conditional-proceed，值班员会照键名按错"
+          ]
+        },
+        {
+          "text": "Confirmar vaciado",
+          "hardware": "H1",
+          "reasons": [
+            "行宽放不下：17 列超过 H1 的 14 列",
+            "丢失方向：需要 conditional-proceed",
+            "丢失步骤：proceed"
+          ]
+        },
+        {
+          "text": "Confirmar vaciado",
+          "hardware": "H2",
+          "reasons": [
+            "行宽放不下：17 列超过 H2 的 16 列",
+            "丢失方向：需要 conditional-proceed",
+            "丢失步骤：proceed"
+          ]
+        }
+      ]
+    },
+    {
+      "segment": "feed/next",
+      "lang": "pt",
+      "source": "",
+      "kind": "missing-submission",
+      "affected_hardware": [
+        "H1",
+        "H2"
+      ],
+      "detail": "译员尚未提交本屏备选"
+    }
+  ],
+  "machines": [
+    {
+      "rollout": "D1",
+      "line": "西装",
+      "hardware": "H1",
+      "lang": "es",
+      "phase": "已领未装",
+      "installed": {
+        "shared": "K0",
+        "feed": null
+      },
+      "issuable": {},
+      "issuable_note": "整包未齐，暂无可领包",
+      "action": "recall",
+      "recallable": true,
+      "rollback": null,
+      "notes": [
+        "当前面板 feed 组版本无记录可查，并置前需现场读屏",
+        "已领未装的 K1 可整包撤回，待译段齐后重发"
+      ],
+      "juxtaposition": []
+    },
+    {
+      "rollout": "D2",
+      "line": "西装",
+      "hardware": "H2",
+      "lang": "es",
+      "phase": "装好",
+      "installed": {
+        "shared": "K1",
+        "feed": "K1"
+      },
+      "issuable": {
+        "shared": "K2"
+      },
+      "issuable_note": "shared 组 K2",
+      "action": "field-correction",
+      "recallable": false,
+      "rollback": null,
+      "notes": [
+        "已装机台撤不回，安排现场纠正换入可发组；记录须写明现装版本加待纠正，不得记成仍用旧译"
+      ],
+      "juxtaposition": [
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "next",
+          "detail": "feed K1 的 next 屏无已装记录，并置前需现场读屏"
+        },
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "hold",
+          "detail": "feed K1 的 hold 屏无已装记录，并置前需现场读屏"
+        },
+        {
+          "check": "key-collision",
+          "screen": "feed/full",
+          "detail": "'No siga' 含确认键名 'Siga'，与共享按键说明并置时需读屏确认"
+        },
+        {
+          "check": "key-collision",
+          "screen": "feed/run",
+          "detail": "'Siga' 含确认键名 'Siga'，与共享按键说明并置时需读屏确认"
+        }
+      ]
+    },
+    {
+      "rollout": "D3",
+      "line": "东装",
+      "hardware": "H2",
+      "lang": "pt",
+      "phase": "未领",
+      "installed": {
+        "shared": "K0",
+        "feed": "K0"
+      },
+      "issuable": {
+        "shared": "K2"
+      },
+      "issuable_note": "shared 组 K2",
+      "action": "issue",
+      "recallable": false,
+      "rollback": {
+        "feed": "K0",
+        "shared": "K0"
+      },
+      "notes": [
+        "拟并置组合不在已确认读屏记录范围内，需补读屏确认"
+      ],
+      "juxtaposition": [
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "run",
+          "detail": "feed K0 的 run 屏无已装记录，并置前需现场读屏"
+        },
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "next",
+          "detail": "feed K0 的 next 屏无已装记录，并置前需现场读屏"
+        },
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "full",
+          "detail": "feed K0 的 full 屏无已装记录，并置前需现场读屏"
+        }
+      ]
+    },
+    {
+      "rollout": "D4",
+      "line": "东装",
+      "hardware": "H2",
+      "lang": "pt",
+      "phase": "读屏记录",
+      "installed": {
+        "feed": "K0",
+        "shared": "K0"
+      },
+      "issuable": {
+        "shared": "K2"
+      },
+      "issuable_note": "shared 组 K2",
+      "action": "hold",
+      "recallable": false,
+      "rollback": {
+        "feed": "K0",
+        "shared": "K0"
+      },
+      "notes": [
+        "拟并置组合不在已确认读屏记录范围内，需补读屏确认",
+        "读屏记录只适用于确切并置组合，换入新组即失效；建议维持已确认组合或换后重读屏"
+      ],
+      "juxtaposition": [
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "run",
+          "detail": "feed K0 的 run 屏无已装记录，并置前需现场读屏"
+        },
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "next",
+          "detail": "feed K0 的 next 屏无已装记录，并置前需现场读屏"
+        },
+        {
+          "check": "unrecorded",
+          "group": "feed",
+          "screen": "full",
+          "detail": "feed K0 的 full 屏无已装记录，并置前需现场读屏"
+        }
+      ]
+    }
+  ]
+}

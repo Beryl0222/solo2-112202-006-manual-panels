@@ -1,0 +1,27 @@
+{
+  "groups": {
+    "feed": {
+      "blocked": [
+        "full",
+        "next"
+      ],
+      "ready": false,
+      "rev": "K2",
+      "screens": {
+        "hold": "Aguarde. Siga",
+        "run": "Retome a carga"
+      }
+    },
+    "shared": {
+      "blocked": [],
+      "ready": true,
+      "rev": "K2",
+      "screens": {
+        "ok": "Aceitar"
+      }
+    }
+  },
+  "hardware": "H1",
+  "lang": "pt",
+  "rev": "K2"
+}

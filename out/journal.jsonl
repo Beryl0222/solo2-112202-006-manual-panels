@@ -1,0 +1,67 @@
+{"kind": "key-name", "lang": "es", "name": "Aceptar", "origins": ["D1 现场记录"], "seq": 1}
+{"kind": "key-name", "lang": "es", "name": "Siga", "origins": ["D2 现场记录", "K1 共享组已装原文"], "seq": 2}
+{"kind": "key-name", "lang": "pt", "name": "Aceitar", "origins": ["D3 现场记录", "K0 共享组已装原文"], "seq": 3}
+{"bundle": "feed", "detail": "丢失方向：需要 stop", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "丢失方向", "lang": "es", "screen": "full", "seq": 4, "text": "Revise llenado"}
+{"bundle": "feed", "detail": "丢失否定", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "丢失否定", "lang": "es", "screen": "full", "seq": 5, "text": "Revise llenado"}
+{"bundle": "feed", "detail": "丢失步骤：stop", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "丢失步骤", "lang": "es", "screen": "full", "seq": 6, "text": "Revise llenado"}
+{"bundle": "feed", "detail": "丢失方向：需要 stop", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "丢失方向", "lang": "es", "screen": "full", "seq": 7, "text": "Revise llenado"}
+{"bundle": "feed", "detail": "丢失否定", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "丢失否定", "lang": "es", "screen": "full", "seq": 8, "text": "Revise llenado"}
+{"bundle": "feed", "detail": "丢失步骤：stop", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "丢失步骤", "lang": "es", "screen": "full", "seq": 9, "text": "Revise llenado"}
+{"bundle": "feed", "hardware": "H1", "kind": "selection", "lang": "es", "screen": "full", "seq": 10, "text": "No siga"}
+{"bundle": "feed", "hardware": "H2", "kind": "selection", "lang": "es", "screen": "full", "seq": 11, "text": "No siga"}
+{"affected_hardware": ["H1", "H2"], "bundle": "feed", "conflict": "missing-submission", "kind": "conflict", "lang": "pt", "screen": "full", "seq": 12}
+{"bundle": "feed", "detail": "行宽放不下：15 列超过 H1 的 14 列", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "行宽放不下", "lang": "es", "screen": "hold", "seq": 13, "text": "Espere material"}
+{"bundle": "feed", "detail": "与工位确认键名 Siga 冲突：本屏方向是 wait，值班员会照键名按错", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "与工位确认键名 Siga 冲突", "lang": "es", "screen": "hold", "seq": 14, "text": "Espere. Siga"}
+{"bundle": "feed", "detail": "与工位确认键名 Siga 冲突：本屏方向是 wait，值班员会照键名按错", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "与工位确认键名 Siga 冲突", "lang": "es", "screen": "hold", "seq": 15, "text": "Espere. Siga"}
+{"affected_hardware": ["H1"], "bundle": "feed", "conflict": "no-usable-variant", "kind": "conflict", "lang": "es", "screen": "hold", "seq": 16}
+{"bundle": "feed", "hardware": "H2", "kind": "selection", "lang": "es", "screen": "hold", "seq": 17, "text": "Espere material"}
+{"bundle": "feed", "detail": "行宽放不下：16 列超过 H1 的 14 列", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "行宽放不下", "lang": "pt", "screen": "hold", "seq": 18, "text": "Aguarde material"}
+{"bundle": "feed", "hardware": "H1", "kind": "selection", "lang": "pt", "screen": "hold", "seq": 19, "text": "Aguarde. Siga"}
+{"bundle": "feed", "hardware": "H2", "kind": "selection", "lang": "pt", "screen": "hold", "seq": 20, "text": "Aguarde. Siga"}
+{"bundle": "feed", "detail": "字形放不下：第 11 位 ',' 超出 H1 字形", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "字形放不下", "lang": "es", "screen": "next", "seq": 21, "text": "Tras vaciar, siga"}
+{"bundle": "feed", "detail": "行宽放不下：17 列超过 H1 的 14 列", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "行宽放不下", "lang": "es", "screen": "next", "seq": 22, "text": "Tras vaciar, siga"}
+{"bundle": "feed", "detail": "与工位确认键名 Siga 冲突：本屏方向是 conditional-proceed，值班员会照键名按错", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "与工位确认键名 Siga 冲突", "lang": "es", "screen": "next", "seq": 23, "text": "Tras vaciar, siga"}
+{"bundle": "feed", "detail": "字形放不下：第 11 位 ',' 超出 H2 字形", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "字形放不下", "lang": "es", "screen": "next", "seq": 24, "text": "Tras vaciar, siga"}
+{"bundle": "feed", "detail": "行宽放不下：17 列超过 H2 的 16 列", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "行宽放不下", "lang": "es", "screen": "next", "seq": 25, "text": "Tras vaciar, siga"}
+{"bundle": "feed", "detail": "与工位确认键名 Siga 冲突：本屏方向是 conditional-proceed，值班员会照键名按错", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "与工位确认键名 Siga 冲突", "lang": "es", "screen": "next", "seq": 26, "text": "Tras vaciar, siga"}
+{"bundle": "feed", "detail": "行宽放不下：17 列超过 H1 的 14 列", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "行宽放不下", "lang": "es", "screen": "next", "seq": 27, "text": "Confirmar vaciado"}
+{"bundle": "feed", "detail": "丢失方向：需要 conditional-proceed", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "丢失方向", "lang": "es", "screen": "next", "seq": 28, "text": "Confirmar vaciado"}
+{"bundle": "feed", "detail": "丢失步骤：proceed", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "丢失步骤", "lang": "es", "screen": "next", "seq": 29, "text": "Confirmar vaciado"}
+{"bundle": "feed", "detail": "行宽放不下：17 列超过 H2 的 16 列", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "行宽放不下", "lang": "es", "screen": "next", "seq": 30, "text": "Confirmar vaciado"}
+{"bundle": "feed", "detail": "丢失方向：需要 conditional-proceed", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "丢失方向", "lang": "es", "screen": "next", "seq": 31, "text": "Confirmar vaciado"}
+{"bundle": "feed", "detail": "丢失步骤：proceed", "hardware": "H2", "kind": "verdict-blocker", "kind_detail": "丢失步骤", "lang": "es", "screen": "next", "seq": 32, "text": "Confirmar vaciado"}
+{"affected_hardware": ["H1", "H2"], "bundle": "feed", "conflict": "no-usable-variant", "kind": "conflict", "lang": "es", "screen": "next", "seq": 33}
+{"affected_hardware": ["H1", "H2"], "bundle": "feed", "conflict": "missing-submission", "kind": "conflict", "lang": "pt", "screen": "next", "seq": 34}
+{"bundle": "feed", "detail": "行宽放不下：15 列超过 H1 的 14 列", "hardware": "H1", "kind": "verdict-blocker", "kind_detail": "行宽放不下", "lang": "es", "screen": "run", "seq": 35, "text": "Siga suministro"}
+{"bundle": "feed", "hardware": "H1", "kind": "selection", "lang": "es", "screen": "run", "seq": 36, "text": "Siga"}
+{"bundle": "feed", "hardware": "H2", "kind": "selection", "lang": "es", "screen": "run", "seq": 37, "text": "Siga suministro"}
+{"bundle": "feed", "hardware": "H1", "kind": "selection", "lang": "pt", "screen": "run", "seq": 38, "text": "Retome a carga"}
+{"bundle": "feed", "hardware": "H2", "kind": "selection", "lang": "pt", "screen": "run", "seq": 39, "text": "Retome a carga"}
+{"bundle": "shared", "hardware": "H1", "kind": "selection", "lang": "es", "screen": "ok", "seq": 40, "text": "Tecla verde"}
+{"bundle": "shared", "hardware": "H2", "kind": "selection", "lang": "es", "screen": "ok", "seq": 41, "text": "Tecla verde"}
+{"bundle": "shared", "hardware": "H1", "kind": "selection", "lang": "pt", "screen": "ok", "seq": 42, "text": "Aceitar"}
+{"bundle": "shared", "hardware": "H2", "kind": "selection", "lang": "pt", "screen": "ok", "seq": 43, "text": "Aceitar"}
+{"check": "shared-token", "detail": "'No siga' 与 'Siga' 共用词 siga，需读屏确认", "hardware": "H1", "kind": "ambiguity", "lang": "es", "screens": ["full", "run"], "seq": 44}
+{"check": "shared-token", "detail": "'No siga' 与 'Siga suministro' 共用词 siga，需读屏确认", "hardware": "H2", "kind": "ambiguity", "lang": "es", "screens": ["full", "run"], "seq": 45}
+{"blocked": ["hold", "next"], "bundle": "feed", "hardware": "H1", "kind": "group-blocked", "lang": "es", "seq": 46}
+{"bundle": "shared", "hardware": "H1", "kind": "group-ready", "lang": "es", "rev": "K2", "seq": 47}
+{"blocked": ["next"], "bundle": "feed", "hardware": "H2", "kind": "group-blocked", "lang": "es", "seq": 48}
+{"bundle": "shared", "hardware": "H2", "kind": "group-ready", "lang": "es", "rev": "K2", "seq": 49}
+{"blocked": ["full", "next"], "bundle": "feed", "hardware": "H1", "kind": "group-blocked", "lang": "pt", "seq": 50}
+{"bundle": "shared", "hardware": "H1", "kind": "group-ready", "lang": "pt", "rev": "K2", "seq": 51}
+{"blocked": ["full", "next"], "bundle": "feed", "hardware": "H2", "kind": "group-blocked", "lang": "pt", "seq": 52}
+{"bundle": "shared", "hardware": "H2", "kind": "group-ready", "lang": "pt", "rev": "K2", "seq": 53}
+{"action": "recall", "hardware": "H1", "issuable": {}, "kind": "machine-action", "lang": "es", "line": "西装", "recallable": true, "rollback": null, "rollout": "D1", "seq": 54}
+{"action": "field-correction", "hardware": "H2", "issuable": {"shared": "K2"}, "kind": "machine-action", "lang": "es", "line": "西装", "recallable": false, "rollback": null, "rollout": "D2", "seq": 55}
+{"check": "unrecorded", "detail": "feed K1 的 next 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "es", "rollout": "D2", "screen": "next", "seq": 56}
+{"check": "unrecorded", "detail": "feed K1 的 hold 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "es", "rollout": "D2", "screen": "hold", "seq": 57}
+{"check": "key-collision", "detail": "'No siga' 含确认键名 'Siga'，与共享按键说明并置时需读屏确认", "kind": "juxtaposition", "lang": "es", "rollout": "D2", "screen": "feed/full", "seq": 58}
+{"check": "key-collision", "detail": "'Siga' 含确认键名 'Siga'，与共享按键说明并置时需读屏确认", "kind": "juxtaposition", "lang": "es", "rollout": "D2", "screen": "feed/run", "seq": 59}
+{"action": "issue", "hardware": "H2", "issuable": {"shared": "K2"}, "kind": "machine-action", "lang": "pt", "line": "东装", "recallable": false, "rollback": {"feed": "K0", "shared": "K0"}, "rollout": "D3", "seq": 60}
+{"check": "unrecorded", "detail": "feed K0 的 run 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "pt", "rollout": "D3", "screen": "run", "seq": 61}
+{"check": "unrecorded", "detail": "feed K0 的 next 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "pt", "rollout": "D3", "screen": "next", "seq": 62}
+{"check": "unrecorded", "detail": "feed K0 的 full 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "pt", "rollout": "D3", "screen": "full", "seq": 63}
+{"action": "hold", "hardware": "H2", "issuable": {"shared": "K2"}, "kind": "machine-action", "lang": "pt", "line": "东装", "recallable": false, "rollback": {"feed": "K0", "shared": "K0"}, "rollout": "D4", "seq": 64}
+{"check": "unrecorded", "detail": "feed K0 的 run 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "pt", "rollout": "D4", "screen": "run", "seq": 65}
+{"check": "unrecorded", "detail": "feed K0 的 next 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "pt", "rollout": "D4", "screen": "next", "seq": 66}
+{"check": "unrecorded", "detail": "feed K0 的 full 屏无已装记录，并置前需现场读屏", "group": "feed", "kind": "juxtaposition", "lang": "pt", "rollout": "D4", "screen": "full", "seq": 67}
